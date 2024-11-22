@@ -1,0 +1,44 @@
+/* ================================= Prep ================================= */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color: #67e8f9;
+  --dark-color: #083344;
+  --light-color: #ecfeff;
+  --blue: #22d3ee;
+
+  --poppins: "Poppins", sans-serif;
+  --gorditas: "Gorditas", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: absolute;
+  width: 80vw;
+  right: 0;
+  min-height: 100vh;
+  background-color: var(--light-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: var(--poppins);
+}
+
+h1 {
+  font-family: var(--gorditas);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}

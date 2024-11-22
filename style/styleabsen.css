@@ -1,0 +1,114 @@
+h1.title-data {
+  text-align: center;
+  color: var(--dark-color);
+  padding-block: 2rem;
+}
+
+.absen-button-container {
+  width: 100%;
+  padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+button.absen {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--dark-color);
+  background: var(--primary-color);
+  outline: none;
+  color: var(--dark-color);
+}
+
+.search-container {
+  width: 80%;
+  margin: auto;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+form input,
+form select {
+  width: 15%;
+  text-indent: 1.2rem;
+}
+
+form input.nis {
+  background: transparent;
+  padding: 0.3rem 0.2rem;
+  border-radius: 0.5rem;
+}
+
+form input.nis::placeholder {
+  text-indent: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+form select {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--dark-color);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.2rem;
+}
+
+form button.submit {
+  font-weight: 700;
+  outline: none;
+  border: 2px solid var(--dark-color);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  transition: 0.3s;
+}
+
+form button.submit:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+table {
+  margin: auto;
+  width: 80%;
+  margin-block: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+th,
+td {
+  text-align: center;
+  padding-block: 0.2rem;
+}
+
+th.id {
+  width: 5%;
+}
+th.absen {
+  width: 10%;
+}
+
+th.nama {
+  width: 30%;
+}
+
+th.tanggal {
+  width: 50%;
+}
+
+th.nis {
+  width: 7%;
+}

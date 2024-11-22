@@ -1,0 +1,46 @@
+nav {
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  color: var(--light-color);
+}
+
+h1.title {
+  text-align: center;
+  font-family: var(--gorditas);
+  font-size: 2rem;
+  padding-block: 2rem;
+  border-bottom: 2px solid var(--light-color);
+  margin-inline: 2rem;
+  font-weight: 700;
+}
+
+h1.title-list {
+  font-family: var(--gorditas);
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  margin-inline: 2rem;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.list-item {
+  display: flex;
+  width: 100%;
+  column-gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.list-item i {
+  text-indent: 2.5rem;
+}

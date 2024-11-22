@@ -1,0 +1,196 @@
+.container-siswa {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+h1.data-siswa-title {
+  color: var(--dark-color);
+  margin-block: 1rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.input-box {
+  width: 40%;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: var(--dark-color);
+  text-indent: 2rem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"] {
+  outline: none;
+  text-indent: 2rem;
+  background: transparent;
+  border: 2px solid var(--dark-color);
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: var(--dark-color);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid {
+  border: 2px solid var(--primary-color);
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.jenis-kelamin-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.jenis-kelamin-box label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.label-box i {
+  font-size: 4rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label div i,
+input[type="radio"] + label div p {
+  color: var(--dark-color);
+  transition: 0.2s;
+}
+
+input#laki-laki:checked + label div p,
+input#laki-laki:checked + label div i {
+  color: var(--blue);
+}
+
+input#perempuan:checked + label div p,
+input#perempuan:checked + label div i {
+  color: #d874d4;
+}
+
+button.submit-btn {
+  border: 2px solid var(--dark-color);
+  outline: none;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  color: var(--dark-color);
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+button.submit-btn:hover {
+  border: 2px solid var(--primary-color);
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+HTML CSSResult Skip Results Iframe EDIT ON input[type="file"] {
+  outline: none;
+  padding: 4px;
+  margin: -4px;
+}
+
+input[type="file"]:focus-within::file-selector-button,
+input[type="file"]:focus::file-selector-button {
+  outline: 2px solid #0964b0;
+  outline-offset: 2px;
+}
+
+input[type="file"]::before {
+  top: 16px;
+}
+
+input[type="file"]::after {
+  top: 14px;
+}
+
+/* ------- From Step 2 ------- */
+
+input[type="file"] {
+  position: relative;
+}
+
+input[type="file"]::file-selector-button {
+  width: 136px;
+  color: transparent;
+}
+
+/* Faked label styles and icon */
+input[type="file"]::before {
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  left: 40px;
+  color: var(--dark-color);
+  content: "Upload File";
+}
+
+input[type="file"]::after {
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  left: 16px;
+  height: 20px;
+  width: 20px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+}
+
+/* ------- From Step 1 ------- */
+
+/* file upload button */
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
